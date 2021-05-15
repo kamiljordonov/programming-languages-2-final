@@ -8,7 +8,8 @@ Home Screen
 
 
 Lost Screen
-![image](https://user-images.githubusercontent.com/81313693/118363110-9dbbbf80-b5b4-11eb-91e7-b9b74e925df3.png)
+![image](https://user-images.githubusercontent.com/81313693/118363217-263a6000-b5b5-11eb-9298-a935da3906d1.png)
+
 
 
 Won Screen
