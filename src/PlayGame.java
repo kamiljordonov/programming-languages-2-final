@@ -8,7 +8,9 @@ import java.awt.event.KeyListener;
 public class PlayGame extends JPanel implements KeyListener, ActionListener {
     private boolean isPlaying = false;
     private int totalScore = 0;
-    private int totalBricks = 21;
+    private int row = 3;
+    private int column = 12;
+    private int totalBricks = row * column;
     private final int jFrameWidth;
     private final int jFrameHeight;
 
@@ -27,7 +29,7 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
     PlayGame(int width, int height) {
         jFrameWidth = width;
         jFrameHeight = height;
-        mapGenerator = new MapGenerator(3, 12, width, height);
+        mapGenerator = new MapGenerator(row, column, width, height);
         addKeyListener(this);
         setFocusTraversalKeysEnabled(false);
         setBackground(Color.BLACK);
@@ -180,8 +182,8 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
                 ballYdirection = -2;
                 playerX = 310;
                 totalScore = 0;
-                totalBricks = 21;
-                mapGenerator = new MapGenerator(3, 7, jFrameWidth, jFrameHeight);
+                totalBricks = row * column;
+                mapGenerator = new MapGenerator(row, column, jFrameWidth, jFrameHeight);
                 repaint();
             }
         }
