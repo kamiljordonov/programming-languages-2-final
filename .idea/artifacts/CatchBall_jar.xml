@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CatchBall:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CatchBall_jar</output-path>
+    <root id="archive" name="CatchBall.jar">
+      <element id="module-output" name="CatchBall" />
+    </root>
+  </artifact>
+</component>
