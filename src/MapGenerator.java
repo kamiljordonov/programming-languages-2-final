@@ -21,7 +21,7 @@ public class MapGenerator {
 
         brickRow = row;
         brickCol = col;
-        brickWidth = (screenWidth - 160) / col;
+        brickWidth = (screenWidth - 200) / col;
         brickHeight = 150 / row;
     }
 

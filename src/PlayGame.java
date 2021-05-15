@@ -52,7 +52,7 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
 
         // the paddle
         g.setColor(Color.green);
-        g.fillRect(playerX, jFrameHeight - 122, 100, 8);
+        g.fillRect(playerX, jFrameHeight - 50, 100, 8);
 
         // the ball
         g.setColor(Color.red);
@@ -71,10 +71,10 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
 
             g.setColor(Color.red);
             g.setFont(new Font("serif", Font.BOLD, 30));
-            g.drawString("Gamer Over! Score: " + totalScore, jFrameWidth / 2 - 120, 300);
+            g.drawString("Gamer Over! Score: " + totalScore, jFrameWidth / 2 - 120, jFrameHeight / 3 * 2 - 50);
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press Enter to Restart...", jFrameWidth / 2 - 80, 350);
+            g.drawString("Press Enter to Restart...", jFrameWidth / 2 - 80, jFrameHeight / 3 * 2);
         }
 
         if (totalBricks <= 0) {
@@ -97,7 +97,7 @@ public class PlayGame extends JPanel implements KeyListener, ActionListener {
     public void actionPerformed(ActionEvent e) {
         timer.start();
         if (isPlaying) {
-            if (new Rectangle(ballPositionX, ballPositionY, 20, 20).intersects(new Rectangle(playerX, jFrameHeight - 122, 100, 8))) {
+            if (new Rectangle(ballPositionX, ballPositionY, 20, 20).intersects(new Rectangle(playerX, jFrameHeight - 50, 100, 8))) {
                 ballYdirection = -ballYdirection;
             }
 
